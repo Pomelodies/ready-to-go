@@ -11,6 +11,7 @@ function App() {
   const [switch1, setSwitch1] = useState(false);
   const [switch2, setSwitch2] = useState(false);
   const [switch3, setSwitch3] = useState(false);
+  const [switchReset, setSwitchReset] = useState(false);
 
   return (
     <>
@@ -26,7 +27,6 @@ function App() {
                 setSwitch1(true);
               }}
             >
-              {/* ON */}
               {switch1 ? (
                 <p className="switchOnClicked">ON</p>
               ) : (
@@ -38,7 +38,6 @@ function App() {
                 setSwitch1(false);
               }}
             >
-              {/* OFF */}
               {switch1 ? (
                 <p className="switchOnNotClicked">OFF</p>
               ) : (
@@ -52,7 +51,6 @@ function App() {
                 setSwitch2(true);
               }}
             >
-              {/* ON */}
               {switch2 ? (
                 <p className="switchOnClicked">ON</p>
               ) : (
@@ -64,7 +62,6 @@ function App() {
                 setSwitch2(false);
               }}
             >
-              {/* OFF */}
               {switch2 ? (
                 <p className="switchOnNotClicked">OFF</p>
               ) : (
@@ -78,7 +75,6 @@ function App() {
                 setSwitch3(true);
               }}
             >
-              {/* ON */}
               {switch3 ? (
                 <p className="switchOnClicked">ON</p>
               ) : (
@@ -90,7 +86,6 @@ function App() {
                 setSwitch3(false);
               }}
             >
-              {/* OFF */}
               {switch3 ? (
                 <p className="switchOnNotClicked">OFF</p>
               ) : (
@@ -111,8 +106,20 @@ function App() {
           ) : (
             <p className="no-way">No Way !</p>
           )}
-          {/* <p>NO WAY !</p> */}
         </section>
+        {/* <section>
+          <button
+            className="reset"
+            onClick={() => {
+              setSwitchReset(true);
+            }}
+          >
+            {switchReset
+              ? switch1 === false && switch2 === false && switch3 === false
+              : null}
+            RESET
+          </button>
+        </section> */}
       </main>
       <footer>
         <p>
