@@ -20,7 +20,7 @@ function App() {
       </header>
       <main>
         <section>
-          <div>
+          <div className="on-off">
             <button
               onClick={() => {
                 setSwitch1(true);
@@ -76,7 +76,12 @@ function App() {
           {
             // 🔺 JE DOIS METTRE UNE CONDITION}
           }
-          <p>NO WAY !</p>
+          {switch1 && switch2 && switch3 ? (
+            <p className="go-go-go">Go!</p>
+          ) : (
+            <p className="no-way">No Way!</p>
+          )}
+          {/* <p>NO WAY !</p> */}
         </section>
       </main>
       <footer>

@@ -61,6 +61,30 @@ main {
   gap: 400px;
 }
 
+.go-go-go {
+  width: 250px;
+  height: 145px;
+  background-color: #46ac4a;
+  color: white;
+  border-radius: 6px;
+  border: solid 1px #908f8f;
+  font-size: 48px;
+  text-align: center;
+  padding: 45px;
+}
+
+.no-way {
+  width: 250px;
+  height: 145px;
+  background-color: #d34848;
+  color: white;
+  border-radius: 6px;
+  border: solid 1px #908f8f;
+  font-size: 48px;
+  text-align: center;
+  padding: 20px;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
