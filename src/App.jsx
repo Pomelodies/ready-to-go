@@ -26,46 +26,76 @@ function App() {
                 setSwitch1(true);
               }}
             >
-              ON
+              {/* ON */}
+              {switch1 ? (
+                <p className="switchOnClicked">ON</p>
+              ) : (
+                <p className="switchOnNotClicked">ON</p>
+              )}
             </button>
             <button
               onClick={() => {
                 setSwitch1(false);
               }}
             >
-              OFF
+              {/* OFF */}
+              {switch1 ? (
+                <p className="switchOnNotClicked">OFF</p>
+              ) : (
+                <p className="switchOnClicked">OFF</p>
+              )}
             </button>
           </div>
-          <div>
+          <div className="on-off">
             <button
               onClick={() => {
                 setSwitch2(true);
               }}
             >
-              ON
+              {/* ON */}
+              {switch2 ? (
+                <p className="switchOnClicked">ON</p>
+              ) : (
+                <p className="switchOnNotClicked">ON</p>
+              )}
             </button>
             <button
               onClick={() => {
                 setSwitch2(false);
               }}
             >
-              OFF
+              {/* OFF */}
+              {switch2 ? (
+                <p className="switchOnNotClicked">OFF</p>
+              ) : (
+                <p className="switchOnClicked">OFF</p>
+              )}
             </button>
           </div>
-          <div>
+          <div className="on-off">
             <button
               onClick={() => {
                 setSwitch3(true);
               }}
             >
-              ON
+              {/* ON */}
+              {switch3 ? (
+                <p className="switchOnClicked">ON</p>
+              ) : (
+                <p className="switchOnNotClicked">ON</p>
+              )}
             </button>
             <button
               onClick={() => {
                 setSwitch3(false);
               }}
             >
-              OFF
+              {/* OFF */}
+              {switch3 ? (
+                <p className="switchOnNotClicked">OFF</p>
+              ) : (
+                <p className="switchOnClicked">OFF</p>
+              )}
             </button>
             {/* {console.log(switch1)}
             {console.log(switch2)}
@@ -77,9 +107,9 @@ function App() {
             // 🔺 JE DOIS METTRE UNE CONDITION}
           }
           {switch1 && switch2 && switch3 ? (
-            <p className="go-go-go">Go!</p>
+            <p className="go-go-go">Go !</p>
           ) : (
-            <p className="no-way">No Way!</p>
+            <p className="no-way">No Way !</p>
           )}
           {/* <p>NO WAY !</p> */}
         </section>
@@ -87,7 +117,7 @@ function App() {
       <footer>
         <p>
           Made with <span>React</span> at <span>Le Reacteur</span> by{" "}
-          <span>Elodiiiie</span> 🌸
+          <span>Elodiiiie</span> 🐸
         </p>
       </footer>
     </>

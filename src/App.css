@@ -61,6 +61,37 @@ main {
   gap: 400px;
 }
 
+main > section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.on-off {
+  display: flex;
+  gap: 30px;
+}
+
+.on-off > button {
+  width: 120px;
+  height: 70px;
+  border-radius: 6px;
+  border: 1px #908f8f solid;
+  font-size: 36px;
+  font-weight: 400;
+  background-color: white;
+}
+
+.switchOnClicked {
+  background-color: #5c48d3;
+  color: white;
+}
+
+.switchOnNotClicked {
+  background-color: white;
+  color: #5c48d3;
+}
+
 .go-go-go {
   width: 250px;
   height: 145px;
@@ -69,8 +100,9 @@ main {
   border-radius: 6px;
   border: solid 1px #908f8f;
   font-size: 48px;
-  text-align: center;
-  padding: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .no-way {
@@ -81,10 +113,12 @@ main {
   border-radius: 6px;
   border: solid 1px #908f8f;
   font-size: 48px;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* #5C48D3 */
 /* ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
@@ -95,6 +129,7 @@ main {
 
 footer {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 footer span {
